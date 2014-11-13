@@ -5,6 +5,8 @@ game.PlayScreen = me.ScreenObject.extend({
 	onResetEvent: function() {
 		// reset the score
 		game.data.score = 0;
+                
+                me.levelDirector.loadLevel("marioo level 1");
 
 		// add our HUD to the game world
 		this.HUD = new game.HUD.Container();
